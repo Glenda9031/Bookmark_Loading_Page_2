@@ -92,3 +92,59 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: var(--ff-rubik);
+  font-size: 1rem;
+  font-weight: var(--fw-reguler-400);
+  color: hsl(var(--clr-very-dark-blue));
+}
+
+@media (width > 90rem) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-weight: var(--fw-medium-500);
+  font-size: 0.875rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--fw-medium-500);
+  color: hsl(var(--clr-very-dark-blue));
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.primary-button {
+  background-color: hsl(var(--clr-very-soft-blue));
+  color: fff;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.3125rem 0.3125rem hsl(var(--clr-very-soft-blue) / 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-button:hover {
+  background-color: transparent;
+  color: hsl(var(--clr-very-soft-blue));
+  border: 0.125rem solid hsl(var(--clr-very-soft-blue));
+} 
+
+
+
