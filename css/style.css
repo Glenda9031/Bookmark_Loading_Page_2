@@ -347,6 +347,43 @@ a {
   padding: 3rem 1.5rem;
 }
 
+.tabs-section {
+  margin-top: 1rem;
+}
+
+.tab-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-header-item::before {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: hsl(var(--clr-soft-red));
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%)scale(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.tab-header-item.active::before {
+  transform: translateX(-50%)scale(1);
+}
+
+.tab-header-item {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border-top: .0625rem solid hsl(var(--clr-grayish-blue) / 0.3);
+  position: relative;
+  cursor: pointer;
+}
+
+
+
 
 
 
