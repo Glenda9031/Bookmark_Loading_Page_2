@@ -382,6 +382,51 @@ a {
   cursor: pointer;
 }
 
+.tab-header-item:last-child {
+  border-bottom: .0625rem solid hsl(var(--clr-grayish-blue) / 0.3);
+}
+
+.tab-header-title {
+  font-weight: var(--fw-medium-500);
+  font-size: 1.125rem;
+  color: hsl(var(--clr-grayish-blue));
+}
+
+.tab-header-title:hover {
+  color: hsl(var(--clr-soft-red));
+}
+
+.tab-header-item.active .tab-header-title {
+  color: hsl(var(--clr-very-dark-blue));
+}
+
+.tab-content-item {
+  display: flex;
+  flex-direction: column;
+  padding-block: 5rem;
+  display: none;
+}
+
+.tab-content-item.active {
+  display: flex;
+}
+
+.tab-content-item-text {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-content-item-title {
+  font-size: 1.5rem;
+}
+
+/* ======= Downloads Section ======== */
+
+
 
 
 
