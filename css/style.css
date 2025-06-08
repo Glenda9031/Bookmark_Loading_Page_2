@@ -742,7 +742,7 @@ a {
     justify-content: center;
   }
 
-  .hero-desscription,
+  .hero-description,
   .feature-description,
   .download-description,
   .faq-description,
@@ -790,7 +790,7 @@ a {
   .nav-link {
     color: hsl(var(--clr-very-dark-blue));
     font-size: 0.785rem;
-    letter-spacing: .125rem;
+    letter-spacing: 2px;
   }
 
   .login .nav-link {
@@ -798,7 +798,8 @@ a {
     background-color: hsl(var(--clr-soft-red));
     color: #fff;
     padding: 0.5rem 2rem;
-    border: .125rem solid hsla(var(--clr-soft-red) / 1);
+    border: 2px solid hsla(var(--clr-soft-red) / 0);
+
     transition: all 0.3s;
   }
 
@@ -808,7 +809,7 @@ a {
     color: hsla(var(--clr-soft-red));
   }
 
-  /* Hero Section */
+  /* hero */
   .hero {
     display: flex;
     justify-content: center;
@@ -830,8 +831,10 @@ a {
   }
 
   .hero::before {
+    /* height: 22rem;
+    width: 32rem; */
     height: 65%;
-    width: 50%;
+    width: 40%;
     border-radius: 10rem 0 0 10rem;
     top: 25%;
   }
@@ -849,7 +852,7 @@ a {
     margin-right: -6rem;
   }
 
-  /* Features Section */
+  /* feature */
   .features {
     display: flex;
     justify-content: center;
@@ -916,7 +919,7 @@ a {
     font-size: 2rem;
   }
 
-  /* Downloads Section */
+  /* download */
   .download {
     display: flex;
     justify-content: center;
@@ -944,7 +947,7 @@ a {
     margin-top: 4rem;
   }
 
-  /* Faqs Section */
+  /* faq */
   .faq {
     display: flex;
     justify-content: center;
@@ -970,12 +973,12 @@ a {
     margin-top: 3rem;
   }
 
-  /* Newsletters Section */
+  /* newsletter */
+
   .newsletter {
     display: flex;
     justify-content: center;
   }
-
   .newsletter-content {
     max-width: 35rem;
     padding: 5rem 1.5rem;
@@ -990,8 +993,8 @@ a {
   }
 
   .newsletter-form {
-    display: flex;
     flex-direction: row;
+    display: flex;
     align-items: flex-start;
     gap: 1rem;
   }
@@ -1004,7 +1007,7 @@ a {
     flex-basis: 30%;
   }
 
-  /* Footer Section */
+  /* footer */
   .footer {
     display: flex;
     justify-content: center;
@@ -1032,17 +1035,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 3rem;
   height: 3rem;
+
   font-size: 1.5rem;
   color: #fff;
   border-radius: 0.25rem;
+
   position: fixed;
   right: 1rem;
   bottom: 2rem;
 }
-
-
 
 
 
