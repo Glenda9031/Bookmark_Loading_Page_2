@@ -10,6 +10,7 @@ tabHeader.addEventListener("click", function (e) {
 
   if (!clicked) return;
 
+  // remove active class
   tabItem.forEach((t) => t.classList.remove("active"));
   tabContent.forEach((a) => a.classList.remove("active"));
 
